@@ -380,7 +380,7 @@ pickle.dump(rfc, open("model_rfc.pkl", "wb"))
 
 # Pydantic
 
-# !pip install pydantic
+!pip install pydantic
 from pydantic import BaseModel
 
 class Customer_details(BaseModel):
@@ -404,10 +404,10 @@ class Customer_details(BaseModel):
             "Dependents"        : 0,
             "Education"         : "Graduate",
             "Self_Employed"     : "Yes",
-            "ApplicantIncome"   : 3564,
-            "CoapplicantIncome" : 5482,
-            "LoanAmount"        : 265.0,
-            "Loan_Amount_Term"  : 258.0,
+            "ApplicantIncome"   : 3564.00,
+            "CoapplicantIncome" : 5482.00,
+            "LoanAmount"        : 265.00,
+            "Loan_Amount_Term"  : 258.00,
             "Credit_History"    : 1,
             "Proprty_Area"      : "Urban"
         }
@@ -457,3 +457,4 @@ server = ColabCode(port = 15000, code=False)
 
 server.run_app(app = app)
 
+"""##### **END OF THE LINE**"""
